@@ -18,3 +18,22 @@ Object {
   },
 }
 `;
+
+exports[`createreducer Adds default setValue method 1`] = `
+Object {
+  "test": Object {
+    "awesome": "yes",
+    "hi": "hello",
+  },
+}
+`;
+
+exports[`createreducer Adds default setValues method 1`] = `
+Object {
+  "test": Object {
+    "awesome": "yes, it is",
+    "existing": "value",
+    "hi": "hi there",
+  },
+}
+`;
