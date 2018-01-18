@@ -1,0 +1,35 @@
+{
+  "name": "createreducer",
+  "version": "0.0.1",
+  "description": "Helper to create a redux reducer from a set of functions.",
+  "main": "createreducer.js",
+  "author": "Jason Ford",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saturn-5/createreducer.git"
+  },
+  "homepage": "https://github.com/saturn-5/createreducer",
+  "scripts": {
+    "test": "jest --coverage --no-cache"
+  },
+  "devDependencies": {
+    "jest-cli": "^22.1.2",
+    "redux": "^3.7.2"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "testMatch": [
+      "**/?(*.)test.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}

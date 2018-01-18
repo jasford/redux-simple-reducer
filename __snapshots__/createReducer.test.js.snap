@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createReducer Adds default setValue method 1`] = `
+Object {
+  "test": Object {
+    "awesome": "yes",
+    "hi": "hello",
+  },
+}
+`;
+
+exports[`createReducer Adds default setValues method 1`] = `
+Object {
+  "test": Object {
+    "awesome": "yes, it is",
+    "existing": "value",
+    "hi": "hi there",
+  },
+}
+`;
