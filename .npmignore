@@ -3,3 +3,4 @@ node_modules
 *.log
 __snapshots__
 .gitignore
+.circleci
