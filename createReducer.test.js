@@ -1,11 +1,11 @@
 const { combineReducers } = require('redux');
 
-const createreducer = require('./createreducer');
+const createReducer = require('./createReducer');
 
-describe('createreducer', () => {
+describe('createReducer', () => {
   test('Creates reducer from action function map.', () => {
-    // Set up new countApp reducer using createreducer.
-    const countApp = createreducer(100, {
+    // Set up new countApp reducer using createReducer.
+    const countApp = createReducer(100, {
       addNumber: (state, action) => state + action.number,
       double: state => state * 2,
     });
@@ -24,8 +24,8 @@ describe('createreducer', () => {
   });
 
   test('Supports dot-separated prefix for action types.', () => {
-    // Set up new countApp reducer using createreducer.
-    const countApp = createreducer(100, {
+    // Set up new countApp reducer using createReducer.
+    const countApp = createReducer(100, {
       addNumber: (state, action) => state + action.number,
       double: state => state * 2,
     }, 'count');
@@ -48,7 +48,7 @@ describe('createreducer', () => {
   });
 
   test('Adds default setValue method', () => {
-    const reducer = combineReducers({ test: createreducer({}, {}, 'test') });
+    const reducer = combineReducers({ test: createReducer({}, {}, 'test') });
     expect(reducer({ test: { hi: 'hello' } }, {
       payload: { key: 'awesome', value: 'yes' },
       type: 'test.setValue',
@@ -56,7 +56,7 @@ describe('createreducer', () => {
   });
 
   test('Adds default setValues method', () => {
-    const reducer = combineReducers({ test: createreducer({}, {}, 'test') });
+    const reducer = combineReducers({ test: createReducer({}, {}, 'test') });
     expect(reducer({ test: { existing: 'value' } }, {
       payload: {
         hi: 'hi there',
