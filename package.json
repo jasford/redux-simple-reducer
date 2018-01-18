@@ -2,7 +2,7 @@
   "name": "redux-simple-reducer",
   "version": "0.0.2",
   "description": "Helper to create a redux reducer from a set of functions.",
-  "main": "createreducer.js",
+  "main": "createReducer.js",
   "author": "Jason Ford",
   "license": "MIT",
   "repository": {
