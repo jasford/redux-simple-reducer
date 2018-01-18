@@ -1,5 +1,5 @@
 {
-  "name": "createreducer",
+  "name": "redux-simple-reducer",
   "version": "0.0.1",
   "description": "Helper to create a redux reducer from a set of functions.",
   "main": "createreducer.js",

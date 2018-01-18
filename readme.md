@@ -4,6 +4,8 @@ state. Optionally add a prefix to all actions.
 
 ### Usage
 ```js
+import createReducer from 'redux-simple-reducer';
+
 // Individual functions for reducer (in separate files, but don't have to be).
 import addAlert from './addAlert';
 import removeAlert from './removeAlert';
