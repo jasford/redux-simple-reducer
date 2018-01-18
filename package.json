@@ -1,6 +1,6 @@
 {
   "name": "redux-simple-reducer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Helper to create a redux reducer from a set of functions.",
   "main": "createReducer.js",
   "author": "Jason Ford",
